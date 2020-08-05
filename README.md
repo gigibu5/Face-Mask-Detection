@@ -1,3 +1,6 @@
+# Navodila za FGC team
+V file-u neki_neki_video.py je bolj spodaj (okrog 120 vrstica) postavljen if stavek v katerga se da neki serial print alpa kej tazga.
+
 <h1 align="center">Face Mask Detection</h1>
 
 ## OPEN SOURCE CONTEST
