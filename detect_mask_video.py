@@ -124,7 +124,14 @@ while True:
 		# the bounding box and text
 		label = "Mask" if mask > withoutMask else "No Mask"
 		color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
-
+		
+		# MACEK - tukej je zate, edini problem k ga vidm je da bo 
+		# to naredu za vsak frame k en nima maske notr ne, tkoda najbolj
+		# da na arduinotu damo sam en delay alpa neki tazga
+		
+		if(label == "No Mask"):
+			koda = "neki" # najverjetneje import serial pa sam en string/char pošlemo
+		
 		# include the probability in the label
 		label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
 
